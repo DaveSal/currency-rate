@@ -1,0 +1,22 @@
+# rcov generated
+coverage
+coverage.data
+
+# rdoc generated
+rdoc
+
+# yard generated
+doc
+.yardoc
+
+# bundler
+.bundle
+
+pkg
+
+.byebug_history
+
+Gemfile.lock
+
+# Private API keys for adapters
+api_keys.yml

@@ -1,0 +1,493 @@
+---
+COP:
+  avg_12h: '12104446.55'
+  volume_btc: '47.19378051'
+  avg_24h: '12119596.85'
+  avg_1h: '12242040.36'
+  rates:
+    last: '12749311.40'
+  avg_6h: '12074200.44'
+USD:
+  avg_12h: '4559.76'
+  volume_btc: '87.23218414'
+  avg_24h: '4291.96'
+  avg_1h: '4703.07'
+  rates:
+    last: '6639.11'
+  avg_6h: '4578.96'
+TWD:
+  volume_btc: '0.07924585'
+  avg_24h: '123665.78'
+  rates:
+    last: '123665.78'
+GHS:
+  avg_12h: '19100.98'
+  volume_btc: '1.68679074'
+  avg_24h: '19184.67'
+  avg_1h: '19405.97'
+  rates:
+    last: '19405.97'
+  avg_6h: '19441.19'
+DASH:
+  volume_btc: '0.02166378'
+  avg_24h: '46.16'
+  rates:
+    last: '46.16'
+NGN:
+  avg_12h: '1411397.61'
+  volume_btc: '103.90052061'
+  avg_24h: '1415330.30'
+  avg_1h: '1478261.93'
+  rates:
+    last: '1483000.00'
+  avg_6h: '1423326.47'
+EGP:
+  avg_12h: '77222.89'
+  volume_btc: '1.13353357'
+  avg_24h: '77182.98'
+  rates:
+    last: '77049.33'
+IDR:
+  avg_12h: '63272299.27'
+  volume_btc: '0.13993232'
+  avg_24h: '62163201.47'
+  rates:
+    last: '63272299.27'
+  avg_6h: '63272299.27'
+HNL:
+  avg_12h: '100000.00'
+  volume_btc: '0.01000000'
+  avg_24h: '100000.00'
+  rates:
+    last: '100000.00'
+CRC:
+  avg_12h: '2481061.95'
+  volume_btc: '0.17786045'
+  avg_24h: '2510395.09'
+  rates:
+    last: '2310118.11'
+  avg_6h: '2330008.91'
+PEN:
+  avg_12h: '14306.13'
+  volume_btc: '21.63297114'
+  avg_24h: '14304.59'
+  avg_1h: '14746.19'
+  rates:
+    last: '14650.00'
+  avg_6h: '14557.57'
+AED:
+  avg_12h: '14588.96'
+  volume_btc: '5.69015571'
+  avg_24h: '14846.43'
+  rates:
+    last: '14229.76'
+GBP:
+  avg_12h: '3147.00'
+  volume_btc: '87.17295796'
+  avg_24h: '3161.76'
+  avg_1h: '3417.86'
+  rates:
+    last: '3516.52'
+  avg_6h: '3228.95'
+MWK:
+  avg_12h: '3448376.27'
+  volume_btc: '0.02609924'
+  avg_24h: '3448376.27'
+  rates:
+    last: '3448376.27'
+DOP:
+  avg_12h: '211631.44'
+  volume_btc: '2.80354505'
+  avg_24h: '211614.20'
+  rates:
+    last: '190999.27'
+  avg_6h: '211751.33'
+LKR:
+  avg_12h: '826497.98'
+  volume_btc: '0.27870993'
+  avg_24h: '847476.08'
+  rates:
+    last: '826497.98'
+DKK:
+  avg_12h: '25384.95'
+  volume_btc: '0.26472583'
+  avg_24h: '25353.48'
+  rates:
+    last: '21872.10'
+  avg_6h: '21872.10'
+AUD:
+  avg_12h: '6100.97'
+  volume_btc: '17.08307249'
+  avg_24h: '6093.23'
+  avg_1h: '6112.65'
+  rates:
+    last: '6780.64'
+  avg_6h: '6084.70'
+PKR:
+  avg_12h: '570664.95'
+  volume_btc: '5.24651971'
+  avg_24h: '561320.96'
+  avg_1h: '643950.25'
+  rates:
+    last: '643950.25'
+  avg_6h: '557225.41'
+JPY:
+  volume_btc: '0.69734612'
+  avg_24h: '412994.34'
+  rates:
+    last: '412994.34'
+TZS:
+  avg_12h: '9577445.78'
+  volume_btc: '0.51416120'
+  avg_24h: '9715445.66'
+  rates:
+    last: '9100000.00'
+  avg_6h: '9100000.00'
+VND:
+  avg_12h: '101478284.92'
+  volume_btc: '0.01182519'
+  avg_24h: '101478284.92'
+  avg_1h: '101478284.92'
+  rates:
+    last: '101478284.92'
+  avg_6h: '101478284.92'
+KWD:
+  avg_12h: '1286.85'
+  volume_btc: '0.15696009'
+  avg_24h: '1274.21'
+  rates:
+    last: '1286.85'
+RON:
+  avg_12h: '14808.15'
+  volume_btc: '2.47578941'
+  avg_24h: '14915.00'
+  rates:
+    last: '14793.64'
+  avg_6h: '14793.64'
+CLP:
+  avg_12h: '2943098.34'
+  volume_btc: '4.60847623'
+  avg_24h: '2938112.28'
+  avg_1h: '3300000.00'
+  rates:
+    last: '3300003.30'
+  avg_6h: '3032919.05'
+MYR:
+  avg_12h: '17121.80'
+  volume_btc: '10.87960590'
+  avg_24h: '16978.31'
+  avg_1h: '17088.05'
+  rates:
+    last: '16885.98'
+  avg_6h: '17167.34'
+THB:
+  avg_12h: '128451.27'
+  volume_btc: '9.28361626'
+  avg_24h: '128556.51'
+  avg_1h: '131334.85'
+  rates:
+    last: '130690.76'
+  avg_6h: '130860.68'
+UAH:
+  avg_12h: '109700.86'
+  volume_btc: '9.33796243'
+  avg_24h: '110945.60'
+  avg_1h: '115000.00'
+  rates:
+    last: '115000.00'
+  avg_6h: '110648.50'
+UGX:
+  avg_12h: '14262855.46'
+  volume_btc: '0.88875267'
+  avg_24h: '14653636.19'
+  rates:
+    last: '16000000.00'
+JOD:
+  volume_btc: '0.24449160'
+  avg_24h: '3108.49'
+  rates:
+    last: '3106.21'
+XMR:
+  avg_12h: '77.97'
+  volume_btc: '0.00320636'
+  avg_24h: '77.97'
+  rates:
+    last: '77.97'
+  avg_6h: '77.97'
+QAR:
+  volume_btc: '0.39609874'
+  avg_24h: '18959.92'
+  rates:
+    last: '19024.98'
+SAR:
+  avg_12h: '16284.58'
+  volume_btc: '5.68544688'
+  avg_24h: '16225.09'
+  rates:
+    last: '16154.26'
+  avg_6h: '16154.26'
+ETH:
+  avg_12h: '31.60'
+  volume_btc: '0.63053145'
+  avg_24h: '31.01'
+  rates:
+    last: '31.42'
+CAD:
+  avg_12h: '5677.75'
+  volume_btc: '6.46936635'
+  avg_24h: '5658.46'
+  avg_1h: '6285.55'
+  rates:
+    last: '6064.05'
+  avg_6h: '5811.86'
+SEK:
+  avg_12h: '37705.42'
+  volume_btc: '10.31270330'
+  avg_24h: '37807.93'
+  avg_1h: '36994.45'
+  rates:
+    last: '36994.45'
+  avg_6h: '38181.04'
+SGD:
+  avg_12h: '5793.56'
+  volume_btc: '3.64570492'
+  avg_24h: '5737.16'
+  avg_1h: '5555.81'
+  rates:
+    last: '5555.81'
+  avg_6h: '5800.76'
+HKD:
+  avg_12h: '32045.94'
+  volume_btc: '10.36879731'
+  avg_24h: '31270.01'
+  rates:
+    last: '33779.05'
+  avg_6h: '32045.94'
+GEL:
+  volume_btc: '0.13437378'
+  avg_24h: '10633.62'
+  rates:
+    last: '10923.41'
+VES:
+  avg_12h: '2833886.00'
+  volume_btc: '144.45187649'
+  avg_24h: '2826312.79'
+  avg_1h: '2833352.19'
+  rates:
+    last: '2966376.95'
+  avg_6h: '2836562.67'
+CHF:
+  avg_12h: '4521.72'
+  volume_btc: '0.26888404'
+  avg_24h: '4332.72'
+  rates:
+    last: '4384.36'
+  avg_6h: '4384.36'
+IRR:
+  avg_12h: '417491275.93'
+  volume_btc: '4.36516352'
+  avg_24h: '418717378.65'
+  rates:
+    last: '418580977.00'
+  avg_6h: '419883807.65'
+XOF:
+  avg_12h: '2606229.93'
+  volume_btc: '0.00767392'
+  avg_24h: '2606229.93'
+  rates:
+    last: '2606229.93'
+KRW:
+  avg_12h: '4409770.29'
+  volume_btc: '2.76936601'
+  avg_24h: '4384945.19'
+  avg_1h: '4877470.58'
+  rates:
+    last: '4933234.95'
+  avg_6h: '4409770.29'
+CNY:
+  avg_12h: '28347.49'
+  volume_btc: '101.34497195'
+  avg_24h: '28023.66'
+  avg_1h: '28821.95'
+  rates:
+    last: '29247.07'
+  avg_6h: '28516.49'
+BYN:
+  avg_12h: '9049.87'
+  volume_btc: '8.59721091'
+  avg_24h: '8993.80'
+  avg_1h: '9982.88'
+  rates:
+    last: '9981.09'
+  avg_6h: '9127.75'
+BDT:
+  avg_12h: '312442.74'
+  volume_btc: '0.18240221'
+  avg_24h: '355286.26'
+  rates:
+    last: '312442.74'
+NZD:
+  avg_12h: '6485.69'
+  volume_btc: '3.84602254'
+  avg_24h: '6554.67'
+  avg_1h: '6576.67'
+  rates:
+    last: '6796.31'
+  avg_6h: '6583.34'
+TRY:
+  avg_12h: '21408.83'
+  volume_btc: '1.15024221'
+  avg_24h: '21350.73'
+  rates:
+    last: '20532.74'
+XRP:
+  avg_12h: '11150.68'
+  volume_btc: '0.02442915'
+  avg_24h: '11441.66'
+  rates:
+    last: '11118.31'
+XAF:
+  avg_12h: '2165027.25'
+  volume_btc: '0.05490790'
+  avg_24h: '2225937.07'
+  rates:
+    last: '2165027.25'
+EUR:
+  avg_12h: '3985.93'
+  volume_btc: '22.03577027'
+  avg_24h: '3925.26'
+  avg_1h: '3595.29'
+  rates:
+    last: '3595.29'
+  avg_6h: '3581.42'
+LTC:
+  avg_12h: '124.26'
+  volume_btc: '0.02126348'
+  avg_24h: '125.10'
+  rates:
+    last: '122.05'
+  avg_6h: '124.46'
+MGA:
+  volume_btc: '0.00443989'
+  avg_24h: '18018464.42'
+  rates:
+    last: '18018464.42'
+ARS:
+  avg_12h: '167651.31'
+  volume_btc: '1.83750308'
+  avg_24h: '167697.67'
+  avg_1h: '181189.44'
+  rates:
+    last: '209102.95'
+  avg_6h: '173655.50'
+UYU:
+  avg_12h: '152776.57'
+  volume_btc: '0.27277338'
+  avg_24h: '152874.16'
+  rates:
+    last: '151835.13'
+SZL:
+  avg_12h: '69423.79'
+  volume_btc: '0.06817415'
+  avg_24h: '69674.50'
+  rates:
+    last: '69423.79'
+KZT:
+  avg_12h: '1470955.64'
+  volume_btc: '1.75717207'
+  avg_24h: '1465689.65'
+  avg_1h: '1742834.19'
+  rates:
+    last: '1750838.71'
+  avg_6h: '1422059.56'
+NOK:
+  avg_12h: '37677.47'
+  volume_btc: '2.20837727'
+  avg_24h: '36259.48'
+  rates:
+    last: '38584.00'
+  avg_6h: '38393.02'
+RUB:
+  avg_12h: '277813.09'
+  volume_btc: '398.18310701'
+  avg_24h: '281237.75'
+  avg_1h: '288543.52'
+  rates:
+    last: '308000.31'
+  avg_6h: '280563.04'
+ZAR:
+  avg_12h: '57843.17'
+  volume_btc: '18.02478592'
+  avg_24h: '58093.75'
+  avg_1h: '58700.00'
+  rates:
+    last: '58700.00'
+  avg_6h: '58563.72'
+PAB:
+  avg_12h: '3909.86'
+  volume_btc: '7.85031573'
+  avg_24h: '3919.02'
+  rates:
+    last: '4100.00'
+  avg_6h: '3876.84'
+INR:
+  avg_12h: '288500.55'
+  volume_btc: '25.07612340'
+  avg_24h: '292587.27'
+  avg_1h: '295192.16'
+  rates:
+    last: '300111.04'
+  avg_6h: '295024.70'
+MXN:
+  avg_12h: '87319.24'
+  volume_btc: '3.53714329'
+  avg_24h: '87400.54'
+  rates:
+    last: '87900.00'
+  avg_6h: '88102.34'
+CZK:
+  volume_btc: '0.06076525'
+  avg_24h: '82283.87'
+  rates:
+    last: '82283.87'
+BRL:
+  avg_12h: '16024.88'
+  volume_btc: '4.55395296'
+  avg_24h: '16228.04'
+  rates:
+    last: '17323.62'
+  avg_6h: '15905.66'
+MAD:
+  avg_12h: '36548.47'
+  volume_btc: '1.44578043'
+  avg_24h: '37162.75'
+  rates:
+    last: '42048.96'
+  avg_6h: '36787.81'
+PLN:
+  avg_12h: '14465.17'
+  volume_btc: '0.74537864'
+  avg_24h: '15974.75'
+  rates:
+    last: '14262.95'
+  avg_6h: '14327.65'
+PHP:
+  volume_btc: '0.27849175'
+  avg_24h: '193183.46'
+  rates:
+    last: '192974.56'
+KES:
+  avg_12h: '453329.72'
+  volume_btc: '12.99746493'
+  avg_24h: '453915.10'
+  avg_1h: '462543.63'
+  rates:
+    last: '462543.63'
+  avg_6h: '463814.28'
+ILS:
+  avg_12h: '14710.10'
+  volume_btc: '0.03260482'
+  avg_24h: '14898.72'
+  rates:
+    last: '14456.34'
+  avg_6h: '14456.34'
