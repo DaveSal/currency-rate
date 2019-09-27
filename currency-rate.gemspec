@@ -10,15 +10,15 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Converter for fiat and crypto currencies"
   spec.description = "Fetches exchange rates from various sources and does the conversion"
-  spec.homepage = "https://gitlab.com/hodl/currency-rate"
+  spec.homepage = "https://gitlab.com/hodlhodl-public/currency-rate"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "http://ci2.hodlex-dev.com:9292"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://gitlab.com/hodl/currency-rate"
+    spec.metadata["source_code_uri"] = "https://gitlab.com/hodlhodl-public/currency-rate"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
