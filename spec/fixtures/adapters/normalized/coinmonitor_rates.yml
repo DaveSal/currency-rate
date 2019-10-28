@@ -1,0 +1,2 @@
+anchor: USD
+ARS: !ruby/object:BigDecimal 36:0.75e2
