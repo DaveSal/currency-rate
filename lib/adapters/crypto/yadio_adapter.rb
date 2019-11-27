@@ -11,6 +11,7 @@ module CurrencyRate
 
       {
         "anchor" => ANCHOR_CURRENCY,
+        "USD" => BigDecimal(data["usd"].to_s),
         "VES" => BigDecimal(data["rate"].to_s),
       }
     end

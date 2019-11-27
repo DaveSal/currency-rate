@@ -1,3 +1,4 @@
 ---
 anchor: BTC
-VES: !ruby/object:BigDecimal 27:0.25869564567e9
+USD: !ruby/object:BigDecimal 18:0.691707e4
+VES: !ruby/object:BigDecimal 27:0.25297549649e9
