@@ -1,0 +1,3 @@
+---
+anchor: BTC
+VES: !ruby/object:BigDecimal 27:0.25869564567e9
