@@ -9,7 +9,7 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 
 desc "Update rates for specified adapter"
-task :update_rates, [:exchange] do |t, args|
+task :update_rates, [:exchange] do |_, args|
   api_keys = YAML.load_file("api_keys.yml")
 
   CurrencyRate.configure do |config|
@@ -31,4 +31,13 @@ task :update_rates, [:exchange] do |t, args|
   puts "Success!"
 
   puts "#{args.exchange} fixtures update finished!"
+end
+
+desc "Update rates for all defined adapters"
+task :update_all_rates do |_, _|
+  CurrencyRate.constants.grep(/.Adapter$/).each do |name|
+    short_name = name.to_s.sub("Adapter", "")
+    Rake::Task[:update_rates].invoke(short_name)
+    Rake::Task[:update_rates].reenable
+  end
 end
