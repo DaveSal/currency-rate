@@ -16,7 +16,5 @@ pkg
 
 .byebug_history
 
-Gemfile.lock
-
 # Private API keys for adapters
 api_keys.yml
