@@ -1,0 +1,3 @@
+---
+anchor: BTC
+USD: !ruby/object:BigDecimal 18:0.662161e4
