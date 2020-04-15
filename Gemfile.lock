@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    currency-rate (1.6.0)
-      http
+    currency-rate (1.6.1)
+      http (>= 4.3)
 
 GEM
   remote: https://rubygems.org/
@@ -20,7 +20,7 @@ GEM
       ffi (>= 1.0.0)
       rake
     hashdiff (1.0.0)
-    http (4.3.0)
+    http (4.4.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
@@ -48,7 +48,7 @@ GEM
     safe_yaml (1.0.5)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.6)
+    unf_ext (0.0.7.7)
     webmock (3.7.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -65,4 +65,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.0.2
+   2.1.2
