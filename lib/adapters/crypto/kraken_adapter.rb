@@ -1,8 +1,8 @@
 module CurrencyRate
   class KrakenAdapter < Adapter
     SUPPORTED_CURRENCIES = %w(
-      ADA BCH BSV BTC DASH EOS ETC ETH GNO LTC MLN
-      NMC QTUM REP XDG XLM XMR XRP XTZ ZEC
+      ADA BCH BSV BTC DAI DASH EOS ETC ETH GNO LTC MLN
+      NMC QTUM REP USDC XDG XLM XMR XRP XTZ ZEC
     )
 
     ASSET_MAP = {
@@ -21,14 +21,14 @@ module CurrencyRate
 
     ANCHOR_CURRENCY = "BTC"
 
-    FETCH_URL = "https://api.kraken.com/0/public/Ticker?pair=#{ %w(ADAXBT BCHXBT BSVXBT DASHXBT EOSXBT GNOXBT QTUMXBT XTZXBT XETCXXBT XETHXXBT XLTCXXBT XREPXXBT XXLMXXBT XXMRXXBT XXRPXXBT XZECXXBT XXBTZUSD).join(",") }"
+    FETCH_URL = "https://api.kraken.com/0/public/Ticker?pair=#{ %w(ADAXBT BCHXBT BSVXBT DASHXBT EOSXBT GNOXBT QTUMXBT XTZXBT XETCXXBT XETHXXBT XLTCXXBT XREPXXBT XXLMXXBT XXMRXXBT XXRPXXBT XZECXXBT XXBTZUSD XBTDAI XBTUSDC).join(",") }"
 
     def normalize(data)
       return nil unless super
       data["result"].reduce({ "anchor" => ANCHOR_CURRENCY }) do |result, (pair, value)|
         key = ta(pair.sub(ta(ANCHOR_CURRENCY), ""))
 
-        if key == "USD"
+        if %w(USD DAI USDC).include?(key)
           result[key] = BigDecimal(value["c"].first.to_s)
         else
           result[key] = 1 / BigDecimal(value["c"].first.to_s)
