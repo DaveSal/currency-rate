@@ -1,18 +1,17 @@
 module CurrencyRate
   class Configuration
     attr_accessor :api_keys
-    attr_accessor :file_storage
     attr_accessor :logger
     attr_accessor :crypto_adapters
     attr_accessor :fiat_adapters
     attr_accessor :connect_timeout
     attr_accessor :read_timeout
+    attr_accessor :storage
     attr_accessor :limit_sources_for_fiat_currencies
     attr_accessor :crypto_currencies
 
     def initialize
       @api_keys         = { }
-      @file_storage     = { path: "" }
       @logger           = {
                             device: $stdout,
                             level:  :info,

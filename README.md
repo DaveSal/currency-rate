@@ -20,8 +20,8 @@ CurrencyRate.configure do |config|
     # Empty array by default
     config.api_keys["ForgeAdapter"] = "forge_api_key"
 
-    # CurrencyRate::FileStorage configuration has only 'path' attribute
-    config.file_storage[:path] = "/home/user/data" # default: ""
+    # CurrencyRate::FileStorage is built-in storage provider and has only `path` parameter
+    config.storage << CurrencyRate::FileStorage(path: "/home/user/data")
 
     # CurrencyRate uses default Logger from Ruby core library
     # It can be replaced with any compatible object

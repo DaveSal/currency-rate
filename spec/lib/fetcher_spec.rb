@@ -5,13 +5,12 @@ RSpec.describe CurrencyRate::Fetcher do
     @usd_try = BigDecimal("22")
     @usd_eur = BigDecimal("0.8457")
     @eur_try = @usd_try / @usd_eur
-    @storage_double = double("storage")
+    @storage_double = instance_double(CurrencyRate::FileStorage)
     @fetcher = CurrencyRate::Fetcher.new(storage: @storage_double)
-  end
 
-  it "uses FileStorage by default" do
-    fetcher = CurrencyRate::Fetcher.new
-    expect(fetcher.storage).to be_a(CurrencyRate::FileStorage)
+    CurrencyRate.configure do |config|
+      config.storage = @storage_double
+    end
   end
 
   it "overwrites the default list of fiat exchanges" do

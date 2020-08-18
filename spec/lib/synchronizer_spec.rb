@@ -18,24 +18,24 @@ RSpec.describe CurrencyRate::Synchronizer do
 
   describe "#sync_crypto!" do
     it "saves crypto rates to given storage" do
-      expect(@storage_double).to receive(:write).with("kraken", @kraken_data)
+      expect(@storage_double).to receive(:write).with("Kraken", @kraken_data)
       @synchronizer.sync_crypto!
     end
 
     it "doesn't fetch fiat rates" do
-      expect(@storage_double).not_to receive(:write).with("yahoo", @yahoo_data)
+      expect(@storage_double).not_to receive(:write).with("Yahoo", @yahoo_data)
       @synchronizer.sync_crypto!
     end
   end
 
   describe "#sync_fiat!" do
     it "saves fiat rates to given storage" do
-      expect(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+      expect(@storage_double).to receive(:write).with("Yahoo", @yahoo_data)
       @synchronizer.sync_fiat!
     end
 
     it "doesn't fetch crypto rates" do
-      expect(@storage_double).not_to receive(:write).with("kraken", @kraken_data)
+      expect(@storage_double).not_to receive(:write).with("Kraken", @kraken_data)
       @synchronizer.sync_fiat!
     end
   end
@@ -54,19 +54,19 @@ RSpec.describe CurrencyRate::Synchronizer do
     end
 
     it "saves fetched rates to given storage" do
-      expect(@storage_double).to receive(:write).with("kraken", @kraken_data)
-      expect(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+      expect(@storage_double).to receive(:write).with("Kraken", @kraken_data)
+      expect(@storage_double).to receive(:write).with("Yahoo", @yahoo_data)
       @synchronizer.sync!
     end
 
     context "when adapter returned nil data" do
       before do
         allow(CurrencyRate::KrakenAdapter.instance).to receive(:fetch_rates).and_return(nil)
-        allow(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+        allow(@storage_double).to receive(:write).with("Yahoo", @yahoo_data)
       end
 
       it "doesn't try to save nil data to the storage" do
-        expect(@storage_double).not_to receive(:write).with("kraken", nil)
+        expect(@storage_double).not_to receive(:write).with("Kraken", nil)
         @synchronizer.sync!
       end
 
@@ -75,7 +75,7 @@ RSpec.describe CurrencyRate::Synchronizer do
       end
 
       it "saves other successfully fetched adapters data" do
-        expect(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+        expect(@storage_double).to receive(:write).with("Yahoo", @yahoo_data)
         @synchronizer.sync!
       end
     end
@@ -83,7 +83,7 @@ RSpec.describe CurrencyRate::Synchronizer do
     context "when adapter fetching failed with and error" do
       before do
         allow(CurrencyRate::KrakenAdapter.instance).to receive(:fetch_rates).and_raise("Error!")
-        allow(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+        allow(@storage_double).to receive(:write).with("Yahoo", @yahoo_data)
       end
 
       it "catches the exception" do
@@ -91,7 +91,7 @@ RSpec.describe CurrencyRate::Synchronizer do
       end
 
       it "continues fetching other adapters" do
-        expect(@storage_double).to receive(:write).with("yahoo", @yahoo_data)
+        expect(@storage_double).to receive(:write).with("Yahoo", @yahoo_data)
         @synchronizer.sync!
       end
     end

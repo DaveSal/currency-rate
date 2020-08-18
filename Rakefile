@@ -20,13 +20,13 @@ task :update_rates, [:exchange] do |_, args|
 
   print "Loading data for #{args.exchange}... "
   exchange_data = adapter.exchange_data
-  raw_storage = CurrencyRate::FileStorage.new(File.expand_path("spec/fixtures/adapters", __dir__))
+  raw_storage = CurrencyRate::FileStorage.new(path: File.expand_path("spec/fixtures/adapters", __dir__))
   raw_storage.write(args.exchange, exchange_data)
   puts "Success!"
 
   print "Normalizing data for #{args.exchange}..."
   normalized_data = adapter.normalize exchange_data
-  normalized_storage = CurrencyRate::FileStorage.new(File.expand_path("spec/fixtures/adapters/normalized", __dir__))
+  normalized_storage = CurrencyRate::FileStorage.new(path: File.expand_path("spec/fixtures/adapters/normalized", __dir__))
   normalized_storage.write(args.exchange, normalized_data)
   puts "Success!"
 

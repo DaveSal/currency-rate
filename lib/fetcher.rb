@@ -6,7 +6,9 @@ module CurrencyRate
     attr_accessor :limit_sources_for_fiat_currencies
 
     def initialize(fiat_exchanges: nil, crypto_exchanges: nil, storage: nil, limit_sources_for_fiat_currencies: {})
-      @storage = storage || FileStorage.new
+      @storage = storage || CurrencyRate.configuration.storage
+      raise CurrencyRate::StorageNotDefinedError unless @storage
+
       @fiat_exchanges = fiat_exchanges || ["Yahoo", "Fixer", "Forge"]
       @crypto_exchanges = crypto_exchanges || ["Bitstamp", "Binance"]
       @limit_sources_for_fiat_currencies = limit_sources_for_fiat_currencies

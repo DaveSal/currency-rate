@@ -5,7 +5,7 @@ RSpec.describe CurrencyRate::FileStorage do
     @data = { "key" => "value" }
     @serializer = CurrencyRate::Storage::YAMLSerializer.new
     @serialized_data = @serializer.serialize(@data)
-    @storage = CurrencyRate::FileStorage.new(serializer: @serializer)
+    @storage = CurrencyRate::FileStorage.new(path: File.expand_path("spec/fixtures/adapters/normalized", __dir__), serializer: @serializer)
   end
 
   describe "#read" do

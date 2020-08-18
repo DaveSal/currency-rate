@@ -3,7 +3,8 @@ module CurrencyRate
     attr_accessor :storage
 
     def initialize(storage: nil)
-      @storage = storage || FileStorage.new
+      @storage = storage || CurrencyRate.configuration.storage
+      raise CurrencyRate::StorageNotDefinedError unless @storage
     end
 
     def sync_fiat!
@@ -28,14 +29,16 @@ module CurrencyRate
       adapters.each do |provider|
         adapter_name = "#{provider}Adapter"
         begin
-          adapter = CurrencyRate::const_get(adapter_name).instance
+          adapter = CurrencyRate.const_get(adapter_name).instance
           rates = adapter.fetch_rates
+
           unless rates
             CurrencyRate.logger.warn("Synchronizer#sync!: rates for #{provider} not found")
             failed.push(provider)
             next
           end
-          exchange_name = provider.downcase
+
+          exchange_name = provider
           @storage.write(exchange_name, rates)
           successfull.push(provider)
         rescue StandardError => e

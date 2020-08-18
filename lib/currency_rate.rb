@@ -4,6 +4,7 @@ require "singleton"
 require "json"
 require "http"
 
+require_relative "exceptions"
 require_relative "configuration"
 require_relative "adapter"
 require_relative "fetcher"
