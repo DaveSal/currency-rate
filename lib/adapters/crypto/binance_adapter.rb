@@ -8,8 +8,8 @@ module CurrencyRate
       INS KEY KMD KNC LRC LSK LTC LUN MCO MDA MFT MOD MTH MTL NAS
       NAV NEO NXS OAX OMG ONT OST PAX PHX POA POE PPT QKC QLC QSP
       RCN RDN REN REP REQ RLC RPX RVN SKY SNM SNT SUB SYS TNB TNT
-      TRX USDC USDT VEN VET VIA VIB WAN WPR WTC XEM XLM XMR XRP
-      XVG XZC ZEC ZEN ZIL ZRX
+      TRX USDC USDT VEN VET VIA VIB WAN WBTC WPR WTC XEM XLM XMR
+      XRP XVG XZC ZEC ZEN ZIL ZRX
     )
 
     ANCHOR_CURRENCY = "BTC"
@@ -21,10 +21,11 @@ module CurrencyRate
 
     def normalize(data)
       return nil unless super
+
       binance_result = data["Binance"].reduce({ "anchor" => ANCHOR_CURRENCY }) do |result, hash|
         if hash["symbol"].index(ANCHOR_CURRENCY) == 0
           result[hash["symbol"].sub(ANCHOR_CURRENCY, "")] = BigDecimal(hash["price"].to_s)
-        elsif hash["symbol"].index(ANCHOR_CURRENCY) == 3
+        elsif hash["symbol"].include?(ANCHOR_CURRENCY)
           result[hash["symbol"].sub(ANCHOR_CURRENCY, "")] = 1 / BigDecimal(hash["price"].to_s)
         end
         result
